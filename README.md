@@ -39,7 +39,7 @@ paste and replace the url on line 22 in main.js
 
 At this point most of the code should be good.
 
-<h1>Hosting the website for free</h1>h1>
+<h1>Hosting the website for free</h1>
 This next step you can use any free website hosting option. i used https://www.infinityfree.com/
 
 so the guide will be for infinityfree as well.
@@ -64,3 +64,8 @@ test it out make sure your google sheet gets properly populated with the right d
 
 and you're done!
 
+
+Potential Issues:
+I had some trouble with CORS error with getting google app script to work. 
+At first its because I was sending incorrect data format, but after having that fixed in the code it started working.
+do note that if you were to re-deploy the google app script you'll need to paste the new url into the javascript file.
