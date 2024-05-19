@@ -1,0 +1,294 @@
+@media (max-width: 575.98px) {
+  .inputForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+
+  .stdImage {
+    height: auto;
+    display: block;
+    max-width: 95%;
+  }
+
+  #collapseForm {
+    width: 95%;
+  }
+
+  .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 30%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .inputForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+
+  .stdImage {
+    height: auto;
+    display: block;
+    max-width: 95%;
+  }
+
+  #collapseForm {
+    width: 85%;
+  }
+
+  .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 30%;
+    max-width: 25rem;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .inputForm {
+    width: 62%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 5rem;
+  }
+
+  .stdImage {
+    height: auto;
+    display: block;
+    max-width: 130%;
+  }
+
+  #collapseForm {
+    width: 100%;
+  }
+
+  .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45%;
+    height: 30%;
+    max-width: 25rem;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .inputForm {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 5rem;
+  }
+
+  #collapseForm {
+    width: 90%;
+  }
+
+  .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 30%;
+    max-width: 25rem;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1400.02px) {
+  .inputForm {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 5rem;
+  }
+
+  #collapseForm {
+    width: 90%;
+    max-width: 53rem;
+  }
+
+  .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 30%;
+    max-width: 25rem;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-image: url("background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.attendSelection {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0.5em;
+}
+
+#allergiesSection {
+  margin-top: 0.5em;
+}
+
+.allergyBox {
+  height: 100px;
+}
+
+#messageSection {
+  margin-top: 0.5em;
+}
+
+.messageBox {
+  height: 100px;
+}
+
+.partyOption {
+  margin: 0.5em 0 0.5em 0;
+}
+
+#confirm {
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+.error {
+  color: red;
+}
+
+.darkbg {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.7;
+}
+
+.hide {
+  display:none !important;
+}
+
+.pointCursor {
+  cursor: pointer;
+}
+
+.popupContainer {
+  margin: 3rem;
+  border: 0.1px solid lightgray;
+  background-color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sylphy {
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.closer {
+  margin: 0 auto;
+  width: 45%;
+  margin-bottom: 0.5rem;
+}
+
+.textDisplay {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.textDisplay span {
+  display: inline-block;
+  animation: waveAnim 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+.swing {
+  animation: swing 1s ease infinite;
+}
+
+/* animations */
+@keyframes swing {
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes waveAnim {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+}
